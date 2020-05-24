@@ -14,10 +14,15 @@ public class Test {
   public String baseUrl = "http://www2.policiamilitar.sp.gov.br/ocorrenciaweb";
   public String logradouroCasa = "Rua Felipe Camarão";
   public String numero = "198";
-  public String reclamacao = "Todos os dias acordando cedo os vizinhos com barulho.\n"
-      + "Bate-bate, barulho de furadeira, serra, tudo sem a menor preocupação com barulho e com os vizinhos.\n"
-      + "Impossível trabalhar e estudar desse jeito.\n"
-      + "Pelo amor de Deus mandem alguém que possa me ajudar!"; //Descrever a reclamação aqui
+  public String contato = "radioContatoNao";
+//  public String contato = "radioContatoSim";
+  public String acompanhar = "radioAcompanharSim";
+//  public String acompanhar = "radioAcompanharNao";
+
+  public String reclamacao = "Todos os dias acordando os vizinhos com barulho.\n"
+      + "No fundo da casa bate-bate, barulho de furadeira, serra, sem a menor preocupação com barulho e os vizinhos.\n"
+      + "Impossível trabalhar e estudar desse jeito!\n"
+      + "Pelo amor de Deus mandem alguém que possa ajudar!"; //Descrever a reclamação aqui
 
   @org.junit.Test
   public void residenciasFestas() throws InterruptedException {
@@ -73,9 +78,16 @@ public class Test {
 
     WebElement caixadeTexto = navigator.findElement(By.id("textoComplemento"));
     caixadeTexto.click();
+
     caixadeTexto.sendKeys(reclamacao);
 
-    navigator.findElement(By.xpath("//*[@id=\"radioContatoNao\"]")).click();
+    navigator.findElement(By.id(contato)).click();
+
+    if (contato.equals("radioContatoSim")){
+
+      navigator.findElement(By.id(acompanhar)).click();
+
+    }
 
     navigator.findElement(By.id("checkDeclaracao")).click();
 
@@ -134,10 +146,18 @@ public class Test {
     // Última Página
 
     WebElement caixadeTexto = navigator.findElement(By.id("textoComplemento"));
+
     caixadeTexto.click();
+
     caixadeTexto.sendKeys(reclamacao);
 
-    navigator.findElement(By.xpath("//*[@id=\"radioContatoNao\"]")).click();
+    navigator.findElement(By.id(contato)).click();
+
+    if (contato.equals("radioContatoSim")){
+
+      navigator.findElement(By.id(acompanhar)).click();
+
+    }
 
     navigator.findElement(By.id("checkDeclaracao")).click();
 
@@ -196,10 +216,18 @@ public class Test {
     // Última Página
 
     WebElement caixadeTexto = navigator.findElement(By.id("textoComplemento"));
+
     caixadeTexto.click();
+
     caixadeTexto.sendKeys(reclamacao);
 
-    navigator.findElement(By.xpath("//*[@id=\"radioContatoNao\"]")).click();
+    navigator.findElement(By.id(contato)).click();
+
+    if (contato.equals("radioContatoSim")){
+
+      navigator.findElement(By.id(acompanhar)).click();
+
+    }
 
     navigator.findElement(By.id("checkDeclaracao")).click();
 
@@ -228,7 +256,7 @@ public class Test {
 
     //navigator.findElement(By.id("municipio")).click();
     WebElement municipio = navigator
-            .findElement(By.xpath("//*[contains(text(), 'SAO BERNARDO DO CAMPO')]"));
+        .findElement(By.xpath("//*[contains(text(), 'SAO BERNARDO DO CAMPO')]"));
     municipio.click();
 
     WebElement logradouro = navigator.findElement(By.id("logradouro"));
@@ -258,10 +286,18 @@ public class Test {
     // Última Página
 
     WebElement caixadeTexto = navigator.findElement(By.id("textoComplemento"));
+
     caixadeTexto.click();
+
     caixadeTexto.sendKeys(reclamacao);
 
-    navigator.findElement(By.xpath("//*[@id=\"radioContatoNao\"]")).click();
+    navigator.findElement(By.id(contato)).click();
+
+    if (contato.equals("radioContatoSim")){
+
+      navigator.findElement(By.id(acompanhar)).click();
+
+    }
 
     navigator.findElement(By.id("checkDeclaracao")).click();
 
@@ -321,10 +357,18 @@ public class Test {
     // Última Página
 
     WebElement caixadeTexto = navigator.findElement(By.id("textoComplemento"));
+
     caixadeTexto.click();
+
     caixadeTexto.sendKeys(reclamacao);
 
-    navigator.findElement(By.xpath("//*[@id=\"radioContatoNao\"]")).click();
+    navigator.findElement(By.id(contato)).click();
+
+    if (contato.equals("radioContatoSim")){
+
+      navigator.findElement(By.id(acompanhar)).click();
+
+    }
 
     navigator.findElement(By.id("checkDeclaracao")).click();
 
@@ -384,10 +428,18 @@ public class Test {
     // Última Página
 
     WebElement caixadeTexto = navigator.findElement(By.id("textoComplemento"));
+
     caixadeTexto.click();
+
     caixadeTexto.sendKeys(reclamacao);
 
-    navigator.findElement(By.xpath("//*[@id=\"radioContatoNao\"]")).click();
+    navigator.findElement(By.id(contato)).click();
+
+    if (contato.equals("radioContatoSim")){
+
+      navigator.findElement(By.id(acompanhar)).click();
+
+    }
 
     navigator.findElement(By.id("checkDeclaracao")).click();
 
@@ -415,7 +467,7 @@ public class Test {
 
     //navigator.findElement(By.id("municipio")).click();
     WebElement municipio = navigator
-            .findElement(By.xpath("//*[contains(text(), 'SAO BERNARDO DO CAMPO')]"));
+        .findElement(By.xpath("//*[contains(text(), 'SAO BERNARDO DO CAMPO')]"));
     municipio.click();
 
     WebElement logradouro = navigator.findElement(By.id("logradouro"));
@@ -447,10 +499,18 @@ public class Test {
     // Última Página
 
     WebElement caixadeTexto = navigator.findElement(By.id("textoComplemento"));
+
     caixadeTexto.click();
+
     caixadeTexto.sendKeys(reclamacao);
 
-    navigator.findElement(By.xpath("//*[@id=\"radioContatoNao\"]")).click();
+    navigator.findElement(By.id(contato)).click();
+
+    if (contato.equals("radioContatoSim")){
+
+      navigator.findElement(By.id(acompanhar)).click();
+
+    }
 
     navigator.findElement(By.id("checkDeclaracao")).click();
 
