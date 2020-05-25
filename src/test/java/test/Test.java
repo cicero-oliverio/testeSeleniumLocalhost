@@ -19,10 +19,9 @@ public class Test {
   public String acompanhar = "radioAcompanharSim";
 //  public String acompanhar = "radioAcompanharNao";
 
-  public String reclamacao = "Todos os dias acordando os vizinhos com barulho.\n"
-      + "No fundo da casa bate-bate, barulho de furadeira, serra, sem a menor preocupação com barulho e os vizinhos.\n"
-      + "Impossível trabalhar e estudar desse jeito!\n"
-      + "Pelo amor de Deus mandem alguém que possa ajudar!"; //Descrever a reclamação aqui
+  public String reclamacao = "Todos os dias esse senhor passa o dia batendo.\n"
+      + "Fica disfarçado no fundo da casa, ele começa logo cedo com bate-bate, furadeira, serra, sem a menor preocupação.Impossível trabalhar e estudar assim!\n"
+      + "Pelo amor de Deus chamem ele na casa e nos ajudem!"; //Descrever a reclamação aqui
 
   @org.junit.Test
   public void residenciasFestas() throws InterruptedException {
