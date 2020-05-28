@@ -11,17 +11,24 @@ public class Test {
   CreateChrome createChrome = new CreateChrome();
   private WebDriver navigator = createChrome.createChrome();
 
+  public  String nome = "Jair Henrique Melo";
+  public String numerocpf = "04863841876";
+  public String rg = "176744009";
   public String baseUrl = "http://www2.policiamilitar.sp.gov.br/ocorrenciaweb";
-  public String logradouroCasa = "Rua Felipe Camarão";
-  public String numero = "198";
+  public String logradouroCasa = "Estrada Brasílio de Lima";
+  public String numero = "4615";
+  public String numerocep = "09822020";
   public String contato = "radioContatoNao";
 //  public String contato = "radioContatoSim";
   public String acompanhar = "radioAcompanharSim";
 //  public String acompanhar = "radioAcompanharNao";
 
-  public String reclamacao = "Todos os dias esse senhor passa o dia batendo.\n"
-      + "Fica disfarçado no fundo da casa, ele começa logo cedo com bate-bate, furadeira, serra, sem a menor preocupação.Impossível trabalhar e estudar assim!\n"
-      + "Pelo amor de Deus chamem ele na casa e nos ajudem!"; //Descrever a reclamação aqui
+//  public String reclamacao = "Todos os dias esse senhor passa o dia batendo.\n"
+//      + "Fica disfarçado no fundo da casa, ele começa logo cedo com bate-bate, furadeira, serra, sem a menor preocupação.Impossível trabalhar e estudar assim!\n"
+//      + "Pelo amor de Deus chamem ele na casa e nos ajudem!"; //Descrever a reclamação aqui
+
+  public String reclamacao = "Pancadão rolando solto em chalé dos dois lados da rua com muita bebida, drogas e barulho em plena quarentena."
+      + "O local é um ponto de venda de droga, maconha e cocaína, estão agressivos e ameaçando os vizinhos. Nos ajudem pelo amor de Deus!";
 
   @org.junit.Test
   public void residenciasFestas() throws InterruptedException {
@@ -30,12 +37,12 @@ public class Test {
 
     //Primeira Página
 
-    navigator.findElement(By.id("nome")).sendKeys("Cicero Oliverio");
+    navigator.findElement(By.id("nome")).sendKeys(nome);
     Thread.sleep(1000);
     WebElement cpf = navigator.findElement(By.id("cpf"));
     cpf.click();
-    cpf.sendKeys("33874389820");
-    navigator.findElement(By.id("rg")).sendKeys("420308696");
+    cpf.sendKeys(numerocpf);
+    navigator.findElement(By.id("rg")).sendKeys(rg);
     navigator.findElement(By.id("email")).sendKeys("cicero_oliverio@hotmail.com");
     navigator.findElement(By.id("emailVerifique")).sendKeys("cicero_oliverio@hotmail.com");
     navigator.findElement(By.id("ddd")).sendKeys("11");
@@ -61,7 +68,7 @@ public class Test {
     navigator.findElement(By.id("complemento")).sendKeys("Casa");
     WebElement cep = navigator.findElement(By.id("cep"));
     cep.click();
-    cep.sendKeys("09820140");
+    cep.sendKeys(numerocep);
 
     navigator.findElement(By.id("botaoEnderecoProximo")).click();
 
@@ -99,12 +106,12 @@ public class Test {
 
     //Primeira Página
 
-    navigator.findElement(By.id("nome")).sendKeys("Cicero Oliverio");
+    navigator.findElement(By.id("nome")).sendKeys(nome);
     Thread.sleep(1000);
     WebElement cpf = navigator.findElement(By.id("cpf"));
     cpf.click();
-    cpf.sendKeys("33874389820");
-    navigator.findElement(By.id("rg")).sendKeys("420308696");
+    cpf.sendKeys(numerocpf);
+    navigator.findElement(By.id("rg")).sendKeys(rg);
     navigator.findElement(By.id("email")).sendKeys("cicero_oliverio@hotmail.com");
     navigator.findElement(By.id("emailVerifique")).sendKeys("cicero_oliverio@hotmail.com");
     navigator.findElement(By.id("ddd")).sendKeys("11");
@@ -130,7 +137,7 @@ public class Test {
     navigator.findElement(By.id("complemento")).sendKeys("Casa");
     WebElement cep = navigator.findElement(By.id("cep"));
     cep.click();
-    cep.sendKeys("09820140");
+    cep.sendKeys(numerocep);
 
     navigator.findElement(By.id("botaoEnderecoProximo")).click();
 
@@ -169,12 +176,12 @@ public class Test {
 
     //Primeira Página
 
-    navigator.findElement(By.id("nome")).sendKeys("Cicero Oliverio");
+    navigator.findElement(By.id("nome")).sendKeys(nome);
     Thread.sleep(1000);
     WebElement cpf = navigator.findElement(By.id("cpf"));
     cpf.click();
-    cpf.sendKeys("33874389820");
-    navigator.findElement(By.id("rg")).sendKeys("420308696");
+    cpf.sendKeys(numerocpf);
+    navigator.findElement(By.id("rg")).sendKeys(rg);
     navigator.findElement(By.id("email")).sendKeys("cicero_oliverio@hotmail.com");
     navigator.findElement(By.id("emailVerifique")).sendKeys("cicero_oliverio@hotmail.com");
     navigator.findElement(By.id("ddd")).sendKeys("11");
@@ -200,7 +207,7 @@ public class Test {
     navigator.findElement(By.id("complemento")).sendKeys("Casa");
     WebElement cep = navigator.findElement(By.id("cep"));
     cep.click();
-    cep.sendKeys("09820140");
+    cep.sendKeys(numerocep);
 
     navigator.findElement(By.id("botaoEnderecoProximo")).click();
 
@@ -239,12 +246,12 @@ public class Test {
 
     //Primeira Página
 
-    navigator.findElement(By.id("nome")).sendKeys("Cicero Oliverio");
+    navigator.findElement(By.id("nome")).sendKeys(nome);
     Thread.sleep(1000);
     WebElement cpf = navigator.findElement(By.id("cpf"));
     cpf.click();
-    cpf.sendKeys("33874389820");
-    navigator.findElement(By.id("rg")).sendKeys("420308696");
+    cpf.sendKeys(numerocpf);
+    navigator.findElement(By.id("rg")).sendKeys(rg);
     navigator.findElement(By.id("email")).sendKeys("cicero_oliverio@hotmail.com");
     navigator.findElement(By.id("emailVerifique")).sendKeys("cicero_oliverio@hotmail.com");
     navigator.findElement(By.id("ddd")).sendKeys("11");
@@ -270,7 +277,7 @@ public class Test {
     navigator.findElement(By.id("complemento")).sendKeys("Casa");
     WebElement cep = navigator.findElement(By.id("cep"));
     cep.click();
-    cep.sendKeys("09820140");
+    cep.sendKeys(numerocep);
 
     navigator.findElement(By.id("botaoEnderecoProximo")).click();
 
@@ -303,17 +310,18 @@ public class Test {
   }
 
   @org.junit.Test
-  public void viaPublicaBailePancadao() {
+  public void viaPublicaBailePancadao() throws InterruptedException {
 
     navigator.get(baseUrl);
 
     //Primeira Página
 
-    navigator.findElement(By.id("nome")).sendKeys("Cicero Oliverio");
+    navigator.findElement(By.id("nome")).sendKeys(nome);
+    Thread.sleep(1000);
     WebElement cpf = navigator.findElement(By.id("cpf"));
     cpf.click();
-    cpf.sendKeys("33874389820");
-    navigator.findElement(By.id("rg")).sendKeys("420308696");
+    cpf.sendKeys(numerocpf);
+    navigator.findElement(By.id("rg")).sendKeys(rg);
     navigator.findElement(By.id("email")).sendKeys("cicero_oliverio@hotmail.com");
     navigator.findElement(By.id("emailVerifique")).sendKeys("cicero_oliverio@hotmail.com");
     navigator.findElement(By.id("ddd")).sendKeys("11");
@@ -339,7 +347,7 @@ public class Test {
     navigator.findElement(By.id("complemento")).sendKeys("Casa");
     WebElement cep = navigator.findElement(By.id("cep"));
     cep.click();
-    cep.sendKeys("09820140");
+    cep.sendKeys(numerocep);
 
     navigator.findElement(By.id("botaoEnderecoProximo")).click();
 
@@ -374,17 +382,18 @@ public class Test {
   }
 
   @org.junit.Test
-  public void viaPublicaAglomeracaoDePessoas() {
+  public void viaPublicaAglomeracaoDePessoas() throws InterruptedException {
 
     navigator.get(baseUrl);
 
     //Primeira Página
 
-    navigator.findElement(By.id("nome")).sendKeys("Cicero Oliverio");
+    navigator.findElement(By.id("nome")).sendKeys(nome);
+    Thread.sleep(1000);
     WebElement cpf = navigator.findElement(By.id("cpf"));
     cpf.click();
-    cpf.sendKeys("33874389820");
-    navigator.findElement(By.id("rg")).sendKeys("420308696");
+    cpf.sendKeys(numerocpf);
+    navigator.findElement(By.id("rg")).sendKeys(rg);
     navigator.findElement(By.id("email")).sendKeys("cicero_oliverio@hotmail.com");
     navigator.findElement(By.id("emailVerifique")).sendKeys("cicero_oliverio@hotmail.com");
     navigator.findElement(By.id("ddd")).sendKeys("11");
@@ -410,7 +419,7 @@ public class Test {
     navigator.findElement(By.id("complemento")).sendKeys("Casa");
     WebElement cep = navigator.findElement(By.id("cep"));
     cep.click();
-    cep.sendKeys("09820140");
+    cep.sendKeys(numerocep);
 
     navigator.findElement(By.id("botaoEnderecoProximo")).click();
 
@@ -445,17 +454,18 @@ public class Test {
   }
 
   @org.junit.Test
-  public void viaPublicaAparelhodeSom() {
+  public void viaPublicaAparelhodeSom() throws InterruptedException {
 
     navigator.get(baseUrl);
 
     //Primeira Página
 
-    navigator.findElement(By.id("nome")).sendKeys("Cicero Oliverio");
+    navigator.findElement(By.id("nome")).sendKeys(nome);
+    Thread.sleep(1000);
     WebElement cpf = navigator.findElement(By.id("cpf"));
     cpf.click();
-    cpf.sendKeys("33874389820");
-    navigator.findElement(By.id("rg")).sendKeys("420308696");
+    cpf.sendKeys(numerocpf);
+    navigator.findElement(By.id("rg")).sendKeys(rg);
     navigator.findElement(By.id("email")).sendKeys("cicero_oliverio@hotmail.com");
     navigator.findElement(By.id("emailVerifique")).sendKeys("cicero_oliverio@hotmail.com");
     navigator.findElement(By.id("ddd")).sendKeys("11");
@@ -481,7 +491,7 @@ public class Test {
     navigator.findElement(By.id("complemento")).sendKeys("Casa");
     WebElement cep = navigator.findElement(By.id("cep"));
     cep.click();
-    cep.sendKeys("09820140");
+    cep.sendKeys(numerocep);
 
     navigator.findElement(By.id("botaoEnderecoProximo")).click();
 
@@ -516,17 +526,18 @@ public class Test {
   }
 
   @org.junit.Test
-  public void viaPublicaObras() {
+  public void viaPublicaObras() throws InterruptedException {
 
     navigator.get(baseUrl);
 
     //Primeira Página
 
-    navigator.findElement(By.id("nome")).sendKeys("Cicero Oliverio");
+    navigator.findElement(By.id("nome")).sendKeys(nome);
+    Thread.sleep(1000);
     WebElement cpf = navigator.findElement(By.id("cpf"));
     cpf.click();
-    cpf.sendKeys("33874389820");
-    navigator.findElement(By.id("rg")).sendKeys("420308696");
+    cpf.sendKeys(numerocpf);
+    navigator.findElement(By.id("rg")).sendKeys(rg);
     navigator.findElement(By.id("email")).sendKeys("cicero_oliverio@hotmail.com");
     navigator.findElement(By.id("emailVerifique")).sendKeys("cicero_oliverio@hotmail.com");
     navigator.findElement(By.id("ddd")).sendKeys("11");
@@ -552,7 +563,7 @@ public class Test {
     navigator.findElement(By.id("complemento")).sendKeys("Casa");
     WebElement cep = navigator.findElement(By.id("cep"));
     cep.click();
-    cep.sendKeys("09820140");
+    cep.sendKeys(numerocep);
 
     navigator.findElement(By.id("botaoEnderecoProximo")).click();
 
