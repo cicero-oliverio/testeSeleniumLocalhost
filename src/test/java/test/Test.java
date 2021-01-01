@@ -9,8 +9,9 @@ import utils.CreateChrome;
 public class Test {
 
   CreateChrome createChrome = new CreateChrome();
-  private WebDriver navigator = createChrome.createChrome();
+  private final WebDriver navigator = createChrome.createChrome();
 
+  public boolean possuiCrianca = false;
 //  public  String nome = "Jair Henrique Melo";
 //  public String numerocpf = "04863841876";
 //  public String rg = "176744009";
@@ -49,6 +50,11 @@ public class Test {
   public String reclamacao = "Em plena pandemia com classificação vermelha e acabaram de começar uma festinha em casa.\n"
       + "Pessoas com diversas crianças, muita barulheira, muitos gritos e som bem alto.\n"
       + "Todos estão sem máscara e completamente bêbados. Pelo amor de Deus que nos ajude!";
+
+//  public String reclamacao = "Em plena pandemia e a vizinha fazendo uma festinha em casa.\n"
+//      + "Muita barulheira, pessoas falando muito alto e completamente bêbados.\n"
+//      + "Todos estão sem máscara e acham que podem fazer o que querem a essa hora de domingo.\n"
+//      + "Pelo amor de Deus que nos ajude!";
 
   @org.junit.Test
   public void residenciasFestas() throws InterruptedException {
@@ -116,6 +122,8 @@ public class Test {
     }
 
     navigator.findElement(By.id("checkDeclaracao")).click();
+
+    navigator.findElement(By.id("CaptchaInputText")).click();
 
   }
 
@@ -188,6 +196,8 @@ public class Test {
 
     navigator.findElement(By.id("checkDeclaracao")).click();
 
+    navigator.findElement(By.id("CaptchaInputText")).click();
+
   }
 
   @org.junit.Test
@@ -259,6 +269,8 @@ public class Test {
 
     navigator.findElement(By.id("checkDeclaracao")).click();
 
+    navigator.findElement(By.id("CaptchaInputText")).click();
+
   }
 
   @org.junit.Test
@@ -329,6 +341,8 @@ public class Test {
     }
 
     navigator.findElement(By.id("checkDeclaracao")).click();
+
+    navigator.findElement(By.id("CaptchaInputText")).click();
 
   }
 
@@ -402,6 +416,8 @@ public class Test {
 
     navigator.findElement(By.id("checkDeclaracao")).click();
 
+    navigator.findElement(By.id("CaptchaInputText")).click();
+
   }
 
   @org.junit.Test
@@ -473,6 +489,8 @@ public class Test {
     }
 
     navigator.findElement(By.id("checkDeclaracao")).click();
+
+    navigator.findElement(By.id("CaptchaInputText")).click();
 
   }
 
@@ -546,6 +564,8 @@ public class Test {
     }
 
     navigator.findElement(By.id("checkDeclaracao")).click();
+
+    navigator.findElement(By.id("CaptchaInputText")).click();
 
   }
 
@@ -623,82 +643,87 @@ public class Test {
 
     navigator.findElement(By.id("checkDeclaracao")).click();
 
+    navigator.findElement(By.id("CaptchaInputText")).click();
+
   }
 
   @org.junit.Test
   public void viaPublicaCriancas() throws InterruptedException {
 
-    navigator.get(baseUrl);
+    if (possuiCrianca = true) {
+      navigator.get(baseUrl);
 
-    //Primeira Página
+      //Primeira Página
 
-    navigator.findElement(By.id("nome")).sendKeys(nome);
-    Thread.sleep(1000);
-    WebElement cpf = navigator.findElement(By.id("cpf"));
-    cpf.click();
-    cpf.sendKeys(numerocpf);
-    navigator.findElement(By.id("rg")).sendKeys(rg);
-    navigator.findElement(By.id("email")).sendKeys("cicero_oliverio@hotmail.com");
-    navigator.findElement(By.id("emailVerifique")).sendKeys("cicero_oliverio@hotmail.com");
-    navigator.findElement(By.id("ddd")).sendKeys("11");
-    navigator.findElement(By.id("telefone")).sendKeys("975697393");
-    navigator.findElement(By.id("botaoCadastroProximo")).click();
+      navigator.findElement(By.id("nome")).sendKeys(nome);
+      Thread.sleep(1000);
+      WebElement cpf = navigator.findElement(By.id("cpf"));
+      cpf.click();
+      cpf.sendKeys(numerocpf);
+      navigator.findElement(By.id("rg")).sendKeys(rg);
+      navigator.findElement(By.id("email")).sendKeys("cicero_oliverio@hotmail.com");
+      navigator.findElement(By.id("emailVerifique")).sendKeys("cicero_oliverio@hotmail.com");
+      navigator.findElement(By.id("ddd")).sendKeys("11");
+      navigator.findElement(By.id("telefone")).sendKeys("975697393");
+      navigator.findElement(By.id("botaoCadastroProximo")).click();
 
-    //Segunda Página
+      //Segunda Página
 
-    //navigator.findElement(By.id("municipio")).click();
-    WebElement municipio = navigator
-        .findElement(By.xpath("//*[contains(text(), 'SAO BERNARDO DO CAMPO')]"));
-    municipio.click();
+      //navigator.findElement(By.id("municipio")).click();
+      WebElement municipio = navigator
+          .findElement(By.xpath("//*[contains(text(), 'SAO BERNARDO DO CAMPO')]"));
+      municipio.click();
 
-    WebElement logradouro = navigator.findElement(By.id("logradouro"));
+      WebElement logradouro = navigator.findElement(By.id("logradouro"));
 
-    logradouro.sendKeys(logradouroCasa);
-    logradouro.sendKeys(Keys.TAB);
+      logradouro.sendKeys(logradouroCasa);
+      logradouro.sendKeys(Keys.TAB);
 
-    navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
+      navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
 
-    navigator.findElement(By.id("numero")).sendKeys(numero);
+      navigator.findElement(By.id("numero")).sendKeys(numero);
 
-    navigator.findElement(By.id("complemento")).sendKeys("Casa");
-    WebElement cep = navigator.findElement(By.id("cep"));
-    cep.click();
-    cep.sendKeys(numerocep);
+      navigator.findElement(By.id("complemento")).sendKeys("Casa");
+      WebElement cep = navigator.findElement(By.id("cep"));
+      cep.click();
+      cep.sendKeys(numerocep);
 
-    navigator.findElement(By.id("botaoEnderecoProximo")).click();
+      navigator.findElement(By.id("botaoEnderecoProximo")).click();
 
-    // Terceira Página
+      // Terceira Página
 
-    navigator.findElement(By.xpath("//*[@id=\"Pergunta_1\"]/div[2]/label")).click();
+      navigator.findElement(By.xpath("//*[@id=\"Pergunta_1\"]/div[2]/label")).click();
 
-        navigator.findElement(By.xpath("//*[@id=\"Pergunta_2\"]/div[8]/label")).click();
+      navigator.findElement(By.xpath("//*[@id=\"Pergunta_2\"]/div[8]/label")).click();
 
-    navigator.findElement(
-        By.xpath("/html/body/div[1]/form/div[3]/div/div[3]/div/div[2]/div[8]/label/input")).click();
+//    navigator.findElement(
+//        By.xpath("/html/body/div[1]/form/div[3]/div/div[3]/div/div[2]/div[5]/label/input")).click();
+//
+//    navigator.findElement(
+//        By.xpath("/html/body/div[1]/form/div[3]/div/div[3]/div/div[3]/div[8]/label/input")).click();
 
-    navigator.findElement(
-        By.xpath("/html/body/div[1]/form/div[3]/div/div[3]/div/div[3]/div[3]/label/input")).click();
+      navigator.findElement(By.id("botaoOrigemProximo")).click();
 
-    navigator.findElement(By.id("botaoOrigemProximo")).click();
+      // Última Página
 
-    // Última Página
+      WebElement caixadeTexto = navigator.findElement(By.id("textoComplemento"));
 
-    WebElement caixadeTexto = navigator.findElement(By.id("textoComplemento"));
+      caixadeTexto.click();
 
-    caixadeTexto.click();
+      caixadeTexto.sendKeys(reclamacao);
 
-    caixadeTexto.sendKeys(reclamacao);
+      navigator.findElement(By.id(contato)).click();
 
-    navigator.findElement(By.id(contato)).click();
+      if (contato.equals("radioContatoSim")) {
 
-    if (contato.equals("radioContatoSim")) {
+        navigator.findElement(By.id(acompanhar)).click();
 
-      navigator.findElement(By.id(acompanhar)).click();
+      }
+
+      navigator.findElement(By.id("checkDeclaracao")).click();
+
+      navigator.findElement(By.id("CaptchaInputText")).click();
 
     }
-
-    navigator.findElement(By.id("checkDeclaracao")).click();
-
   }
-
 }
