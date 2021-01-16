@@ -28,7 +28,7 @@ public class Test {
   public String numerocpf = "33874389820";
   public String rg = "420308696";
   public String baseUrl = "http://www2.policiamilitar.sp.gov.br/ocorrenciaweb";
-  public String logradouroCasa = "Miro Vetorazzo";
+  public String logradouroCasa = "AVENIDA MIRÓ VETORAZO";
   public String numero = "1197";
   public String numerocep = "09820135";
   public String contato = "radioContatoNao";
@@ -56,9 +56,10 @@ public class Test {
 //      + "Todos estão sem máscara e acham que podem fazer o que querem a essa hora de domingo.\n"
 //      + "Pelo amor de Deus que nos ajude!";
 
-  public String reclamacao = "Festa em plena pandemia com som muito alto e gritaria no condomínio.Entro em contato com o síndico e nada, não resolvem nada.\n"
-      + "Tenho uma bebê de 5 meses e não dá pra ela dormir não dá pra ficar no quarto da minha casa!\n"
-      + "Pelo amor de Deus me ajudem!";
+  public String reclamacao =
+      "Festa em plena pandemia com som muito alto e gritaria no condomínio.Entro em contato com o síndico e nada, não resolvem nada.\n"
+          + "Tenho uma bebê de 5 meses e não dá pra ela dormir não dá pra ficar no quarto da minha casa!\n"
+          + "Pelo amor de Deus me ajudem!";
 
   @org.junit.Test
   public void residenciasFestas() throws InterruptedException {
@@ -91,7 +92,11 @@ public class Test {
     logradouro.sendKeys(logradouroCasa);
     logradouro.sendKeys(Keys.TAB);
 
-    navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
+    if (logradouroCasa.equals("AVENIDA MIRÓ VETORAZO")) {
+      navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr[2]/td[1]")).click();
+    } else {
+      navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
+    }
 
     navigator.findElement(By.id("numero")).sendKeys(numero);
 
@@ -162,7 +167,11 @@ public class Test {
     logradouro.sendKeys(logradouroCasa);
     logradouro.sendKeys(Keys.TAB);
 
-    navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
+    if (logradouroCasa.equals("AVENIDA MIRÓ VETORAZO")) {
+      navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr[2]/td[1]")).click();
+    } else {
+      navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
+    }
 
     navigator.findElement(By.id("numero")).sendKeys(numero);
 
@@ -234,8 +243,11 @@ public class Test {
 
     logradouro.sendKeys(logradouroCasa);
     logradouro.sendKeys(Keys.TAB);
-
-    navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
+    if (logradouroCasa.equals("AVENIDA MIRÓ VETORAZO")) {
+      navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr[2]/td[1]")).click();
+    } else {
+      navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
+    }
 
     navigator.findElement(By.id("numero")).sendKeys(numero);
 
@@ -307,8 +319,11 @@ public class Test {
 
     logradouro.sendKeys(logradouroCasa);
     logradouro.sendKeys(Keys.TAB);
-
-    navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
+    if (logradouroCasa.equals("AVENIDA MIRÓ VETORAZO")) {
+      navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr[2]/td[1]")).click();
+    } else {
+      navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
+    }
 
     navigator.findElement(By.id("numero")).sendKeys(numero);
 
@@ -380,8 +395,11 @@ public class Test {
 
     logradouro.sendKeys(logradouroCasa);
     logradouro.sendKeys(Keys.TAB);
-
-    navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
+    if (logradouroCasa.equals("AVENIDA MIRÓ VETORAZO")) {
+      navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr[2]/td[1]")).click();
+    } else {
+      navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
+    }
 
     navigator.findElement(By.id("numero")).sendKeys(numero);
 
@@ -454,8 +472,11 @@ public class Test {
 
     logradouro.sendKeys(logradouroCasa);
     logradouro.sendKeys(Keys.TAB);
-
-    navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
+    if (logradouroCasa.equals("AVENIDA MIRÓ VETORAZO")) {
+      navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr[2]/td[1]")).click();
+    } else {
+      navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
+    }
 
     navigator.findElement(By.id("numero")).sendKeys(numero);
 
@@ -528,8 +549,11 @@ public class Test {
 
     logradouro.sendKeys(logradouroCasa);
     logradouro.sendKeys(Keys.TAB);
-
-    navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
+    if (logradouroCasa.equals("AVENIDA MIRÓ VETORAZO")) {
+      navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr[2]/td[1]")).click();
+    } else {
+      navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
+    }
 
     navigator.findElement(By.id("numero")).sendKeys(numero);
 
@@ -603,8 +627,11 @@ public class Test {
 
     logradouro.sendKeys(logradouroCasa);
     logradouro.sendKeys(Keys.TAB);
-
-    navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
+    if (logradouroCasa.equals("AVENIDA MIRÓ VETORAZO")) {
+      navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr[2]/td[1]")).click();
+    } else {
+      navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
+    }
 
     navigator.findElement(By.id("numero")).sendKeys(numero);
 
@@ -682,9 +709,11 @@ public class Test {
 
       logradouro.sendKeys(logradouroCasa);
       logradouro.sendKeys(Keys.TAB);
-
-      navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
-
+      if (logradouroCasa.equals("AVENIDA MIRÓ VETORAZO")) {
+        navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr[2]/td[1]")).click();
+      } else {
+        navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
+      }
       navigator.findElement(By.id("numero")).sendKeys(numero);
 
       navigator.findElement(By.id("complemento")).sendKeys("Casa");
