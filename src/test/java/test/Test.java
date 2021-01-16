@@ -28,9 +28,9 @@ public class Test {
   public String numerocpf = "33874389820";
   public String rg = "420308696";
   public String baseUrl = "http://www2.policiamilitar.sp.gov.br/ocorrenciaweb";
-  public String logradouroCasa = "Rua Felipe Camarao";
-  public String numero = "186";
-  public String numerocep = "09820140";
+  public String logradouroCasa = "Miro Vetorazzo";
+  public String numero = "1197";
+  public String numerocep = "09820135";
   public String contato = "radioContatoNao";
   //  public String contato = "radioContatoSim";
 // public String acompanhar = "radioAcompanharSim";
@@ -47,14 +47,18 @@ public class Test {
 //      + "Estou com criança pequena em casa e tentando trabalhar mas não dá.\n"
 //      + "Ele ameaça os vizinhos e disse que a polícia nada pode fazer, pelo amor de Deus nos ajudem!";
 
-  public String reclamacao = "Em plena pandemia com classificação vermelha e acabaram de começar uma festinha em casa.\n"
-      + "Pessoas com diversas crianças, muita barulheira, muitos gritos e som bem alto.\n"
-      + "Todos estão sem máscara e completamente bêbados. Pelo amor de Deus que nos ajude!";
+//  public String reclamacao = "Em pleno domingo em pandemia e acabaram de começar uma festinha em casa.\n"
+//      + "Falando alto na garagem, fumando maconha e muita barulheira, muitos gritos e som bem alto.\n"
+//      + "Todos estão sem máscara e completamente bêbados. Pelo amor de Deus que nos ajude!";
 
 //  public String reclamacao = "Em plena pandemia e a vizinha fazendo uma festinha em casa.\n"
 //      + "Muita barulheira, pessoas falando muito alto e completamente bêbados.\n"
 //      + "Todos estão sem máscara e acham que podem fazer o que querem a essa hora de domingo.\n"
 //      + "Pelo amor de Deus que nos ajude!";
+
+  public String reclamacao = "Festa em plena pandemia com som muito alto e gritaria no condomínio.Entro em contato com o síndico e nada, não resolvem nada.\n"
+      + "Tenho uma bebê de 5 meses e não dá pra ela dormir não dá pra ficar no quarto da minha casa!\n"
+      + "Pelo amor de Deus me ajudem!";
 
   @org.junit.Test
   public void residenciasFestas() throws InterruptedException {
