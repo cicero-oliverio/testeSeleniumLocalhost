@@ -8,726 +8,838 @@ import utils.CreateChrome;
 
 public class Test {
 
-  CreateChrome createChrome = new CreateChrome();
-  private final WebDriver navigator = createChrome.createChrome();
+    CreateChrome createChrome = new CreateChrome();
+    private final WebDriver navigator = createChrome.createChrome();
 
-  public boolean possuiCrianca = false;
-//  public  String nome = "Jair Henrique Melo";
-//  public String numerocpf = "04863841876";
-//  public String rg = "176744009";
+    public boolean possuiCrianca = false;
+    public boolean anonimo = false;
+
+//    public String nome = "Jair Henrique Melo";
+//    public String numerocpf = "04863841876";
+//    public String rg = "176744009";
+//    public String baseUrl = "http://www2.policiamilitar.sp.gov.br/ocorrenciaweb";
+//    public String logradouroCasa = "Estrada Brasílio de Lima";
+//    public String numero = "4615";
+//    public String numerocep = "09822020";
+//    public String contato = "radioContatoNao";
+//    //  public String contato = "radioContatoSim";
+//    public String acompanhar = "radioAcompanharSim";
+//  public String acompanhar = "radioAcompanharNao";
+
+//  public String nome = "Cicero Oliverio";
+//  public String numerocpf = "33874389820";
+//  public String rg = "420308696";
 //  public String baseUrl = "http://www2.policiamilitar.sp.gov.br/ocorrenciaweb";
-//  public String logradouroCasa = "Estrada Brasílio de Lima";
-//  public String numero = "225";
-//  public String numerocep = "09822020";
+//  public String logradouroCasa = "AVENIDA MIRÓ VETORAZO";
+//  public String numero = "1197";
+//  public String numerocep = "09820135";
 //  public String contato = "radioContatoNao";
-////  public String contato = "radioContatoSim";
-//  public String acompanhar = "radioAcompanharSim";
-////  public String acompanhar = "radioAcompanharNao";
+//  //  public String contato = "radioContatoSim";
+//// public String acompanhar = "radioAcompanharSim";
+//  public String acompanhar = "radioAcompanharNao";
 
   public String nome = "Cicero Oliverio";
   public String numerocpf = "33874389820";
   public String rg = "420308696";
   public String baseUrl = "http://www2.policiamilitar.sp.gov.br/ocorrenciaweb";
-  public String logradouroCasa = "AVENIDA MIRÓ VETORAZO";
-  public String numero = "1197";
+  public String logradouroCasa = "RUA FELIPE CAMARAO";
+  public String numero = "186";
   public String numerocep = "09820135";
   public String contato = "radioContatoNao";
   //  public String contato = "radioContatoSim";
 // public String acompanhar = "radioAcompanharSim";
   public String acompanhar = "radioAcompanharNao";
 
-//  public String reclamacao =
+//  public String nome = "Cicero Oliverio";
+//  public String numerocpf = "33874389820";
+//  public String rg = "420308696";
+//  public String baseUrl = "http://www2.policiamilitar.sp.gov.br/ocorrenciaweb";
+//  public String logradouroCasa = "RUA FELIPE CAMARAO";
+//  public String numero = "201";
+//  public String numerocep = "09820135";
+//  public String contato = "radioContatoNao";
+//  //  public String contato = "radioContatoSim";
+//// public String acompanhar = "radioAcompanharSim";
+//  public String acompanhar = "radioAcompanharNao";
+
+//  public String nome = "Cicero Oliverio";
+//  public String numerocpf = "33874389820";
+//  public String rg = "420308696";
+//  public String baseUrl = "http://www2.policiamilitar.sp.gov.br/ocorrenciaweb";
+//  public String logradouroCasa = "RUA FELIPE CAMARAO";
+//  public String numero = "225";
+//  public String numerocep = "09820135";
+//  public String contato = "radioContatoNao";
+//  //  public String contato = "radioContatoSim";
+// public String acompanhar = "radioAcompanharSim";
+////  public String acompanhar = "radioAcompanharNao";
+
+//  public String nome = "Cicero Oliverio";
+//  public String numerocpf = "33874389820";
+//  public String rg = "420308696";
+//  public String baseUrl = "http://www2.policiamilitar.sp.gov.br/ocorrenciaweb";
+//  public String logradouroCasa = "RUA FELIPE CAMARAO";
+//  public String numero = "207";
+//  public String numerocep = "09820140";
+//  public String contato = "radioContatoNao";
+//  //  public String contato = "radioContatoSim";
+//  // public String acompanhar = "radioAcompanharSim";
+//  public String acompanhar = "radioAcompanharNao";
+
+    //  public String reclamacao =
 //      "Desde cedo com uma máquina ligada serrando alguma coisa, já são 21:30 e nada de parar."
 //          + "Barulho muito alto, não tem acordo o vizinho disse que não vai parar, trabalho amanha e preciso dormir. Pelo amor de Deus nos ajudem!";
+//  public String reclamacao = "Todos os dias com muito barulho de serra e martelada o dia todo, construção ilegal que não acaba nos ajudem pelo amor de Deus!";
 
-  /* public String reclamacao = "Festa de aniversário a essa hora com a maior barulheira, gritaria, bebidas drogas impossível dormir com essa zona.Vizinhos alterados e agressivos, nos ajudem pelo amor de Deus!";
-   */
 
-//  public String reclamacao = "Em plena sexta-feira a essa hora com som alto, vizinho encrenqueiro e agressivo.\n"
-//      + "Estou com criança pequena em casa e tentando trabalhar mas não dá.\n"
-//      + "Ele ameaça os vizinhos e disse que a polícia nada pode fazer, pelo amor de Deus nos ajudem!";
+  public String reclamacao = "Em plena sexta-feira a essa hora com som alto, vizinho encrenqueiro e agressivo.\n"
+      + "Estou com criança pequena em casa e tentando trabalhar mas não dá.\n"
+      + "Ele ameaça os vizinhos e disse que a polícia nada pode fazer, pelo amor de Deus nos ajudem!";
 
 //  public String reclamacao = "Em pleno domingo em pandemia e acabaram de começar uma festinha em casa.\n"
 //      + "Falando alto na garagem, fumando maconha e muita barulheira, muitos gritos e som bem alto.\n"
 //      + "Todos estão sem máscara e completamente bêbados. Pelo amor de Deus que nos ajude!";
 
 //  public String reclamacao = "Em plena pandemia e a vizinha fazendo uma festinha em casa.\n"
-//      + "Muita barulheira, pessoas falando muito alto e completamente bêbados.\n"
-//      + "Todos estão sem máscara e acham que podem fazer o que querem a essa hora de domingo.\n"
-//      + "Pelo amor de Deus que nos ajude!";
+//          + "Muita barulheira, pessoas falando muito alto e completamente bêbados.\n"
+//          + "Todos estão sem máscara e acham que podem fazer o que querem a essa hora de sabado.\n"
+//          + "Pelo amor de Deus que nos ajude!";
 
-  public String reclamacao =
-      "Festa em plena pandemia com som muito alto e gritaria no condomínio.Entro em contato com o síndico e nada, não resolvem nada.\n"
-          + "Tenho uma bebê de 5 meses e não dá pra ela dormir não dá pra ficar no quarto da minha casa!\n"
-          + "Pelo amor de Deus me ajudem!";
+//  public String reclamacao =
+//      "Festa em plena pandemia com som muito alto e gritaria no condomínio.Entro em contato com o síndico e nada, não resolvem nada.\n"
+//          + "Tenho uma bebê de 5 meses e não dá pra ela dormir não dá pra ficar no quarto da minha casa!\n"
+//          + "Pelo amor de Deus me ajudem!";
 
-  @org.junit.Test
-  public void residenciasFestas() throws InterruptedException {
+//  public String reclamacao = "Vizinho fazendo festinha em casa. Mesmo com a fase vermelha, a maior gritaria e barulheira." +
+//          "Nada de máscara, colocando em risco todos os vizinhos." +
+//          "Eles são agressivos e ameaçam quem reclama e para quem chama a polícia." +
+//          "Nos ajudem pelo amor de Deus!";
 
-    navigator.get(baseUrl);
+//    public String reclamacao = "Som alto desde cedo e bebedeira e drogas." +
+//            "Esse vizinho é agressivo e ameaça a todos ,diz que faz o que quer e a polícia não pode fazer nada." +
+//            "Pelo amor de Deus nos ajudem!!";
 
-    //Primeira Página
+//  public String reclamacao = "Obra barulhenta demais a essa hora da manhã, cortando piso batendo, e fazendo isso tudo na calçada." +
+//          "Temos muitos idosos, crianças e pessoas trabalhando de casa e eles não querem nem saber." +
+//          "Pelo amor de Deus nos ajudem!";
 
-    navigator.findElement(By.id("nome")).sendKeys(nome);
-    Thread.sleep(1000);
-    WebElement cpf = navigator.findElement(By.id("cpf"));
-    cpf.click();
-    cpf.sendKeys(numerocpf);
-    navigator.findElement(By.id("rg")).sendKeys(rg);
-    navigator.findElement(By.id("email")).sendKeys("cicero_oliverio@hotmail.com");
-    navigator.findElement(By.id("emailVerifique")).sendKeys("cicero_oliverio@hotmail.com");
-    navigator.findElement(By.id("ddd")).sendKeys("11");
-    navigator.findElement(By.id("telefone")).sendKeys("975697393");
-    navigator.findElement(By.id("botaoCadastroProximo")).click();
+//    public String reclamacao = "Chale com festa clandestina em plena pandemia!" +
+//            "Muita bagunça, som alto, bebída e nenhum respeito.Eles estão agressivos e ameaçam a todos, fazem o que querem.Uso de maconha e outras drogas, distanciamento nenhum!" +
+//            "Nos ajudem pelo amor de Deus!";
 
-    //Segunda Página
+    @org.junit.Test
+    public void residenciasFestas() throws InterruptedException {
 
-    //navigator.findElement(By.id("municipio")).click();
-    WebElement municipio = navigator
-        .findElement(By.xpath("//*[contains(text(), 'SAO BERNARDO DO CAMPO')]"));
-    municipio.click();
+        navigator.get(baseUrl);
 
-    WebElement logradouro = navigator.findElement(By.id("logradouro"));
+        //Primeira Página
 
-    logradouro.sendKeys(logradouroCasa);
-    logradouro.sendKeys(Keys.TAB);
+        if (anonimo == true) {
+            navigator.findElement(By.id("anonimo")).click();
+            navigator.findElement(By.id("botaoCadastroProximo")).click();
+        } else {
+            navigator.findElement(By.id("nome")).sendKeys(nome);
+            Thread.sleep(1000);
+            WebElement cpf = navigator.findElement(By.id("cpf"));
+            cpf.click();
+            cpf.sendKeys(numerocpf);
+            navigator.findElement(By.id("rg")).sendKeys(rg);
+            navigator.findElement(By.id("email")).sendKeys("cicero_oliverio@hotmail.com");
+            navigator.findElement(By.id("emailVerifique")).sendKeys("cicero_oliverio@hotmail.com");
+            navigator.findElement(By.id("ddd")).sendKeys("11");
+            navigator.findElement(By.id("telefone")).sendKeys("975697393");
+            navigator.findElement(By.id("botaoCadastroProximo")).click();
+        }
 
-    if (logradouroCasa.equals("AVENIDA MIRÓ VETORAZO")) {
-      navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr[2]/td[1]")).click();
-    } else {
-      navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
-    }
 
-    navigator.findElement(By.id("numero")).sendKeys(numero);
+        //Segunda Página
 
-    navigator.findElement(By.id("complemento")).sendKeys("Casa");
-    WebElement cep = navigator.findElement(By.id("cep"));
-    cep.click();
-    cep.sendKeys(numerocep);
+        //navigator.findElement(By.id("municipio")).click();
+        WebElement municipio = navigator
+                .findElement(By.xpath("//*[contains(text(), 'SAO BERNARDO DO CAMPO')]"));
+        municipio.click();
 
-    navigator.findElement(By.id("botaoEnderecoProximo")).click();
+        WebElement logradouro = navigator.findElement(By.id("logradouro"));
 
-    // Terceira Página
+        logradouro.sendKeys(logradouroCasa);
+        logradouro.sendKeys(Keys.TAB);
 
-    navigator.findElement(By.xpath("//*[@id=\"Pergunta_1\"]/div[3]/label")).click();
+        if (logradouroCasa.equals("AVENIDA MIRÓ VETORAZO")) {
+            navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr[2]/td[1]")).click();
+        } else {
+            navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
+        }
 
-    navigator.findElement(By.xpath("//*[@id=\"Pergunta_7\"]/div[4]/label")).click();
+        navigator.findElement(By.id("numero")).sendKeys(numero);
 
-    navigator.findElement(By.id("botaoOrigemProximo")).click();
+        navigator.findElement(By.id("complemento")).sendKeys("Casa");
+        WebElement cep = navigator.findElement(By.id("cep"));
+        cep.click();
+        cep.sendKeys(numerocep);
 
-    // Última Página
+        navigator.findElement(By.id("botaoEnderecoProximo")).click();
 
-    WebElement caixadeTexto = navigator.findElement(By.id("textoComplemento"));
-    caixadeTexto.click();
+        // Terceira Página
 
-    caixadeTexto.sendKeys(reclamacao);
+        navigator.findElement(By.xpath("//*[@id=\"Pergunta_1\"]/div[3]/label")).click();
 
-    navigator.findElement(By.id(contato)).click();
+        navigator.findElement(By.xpath("//*[@id=\"Pergunta_7\"]/div[4]/label")).click();
 
-    if (contato.equals("radioContatoSim")) {
+        navigator.findElement(By.id("botaoOrigemProximo")).click();
 
-      navigator.findElement(By.id(acompanhar)).click();
+        // Última Página
 
-    }
+        WebElement caixadeTexto = navigator.findElement(By.id("textoComplemento"));
+        caixadeTexto.click();
 
-    navigator.findElement(By.id("checkDeclaracao")).click();
+        caixadeTexto.sendKeys(reclamacao);
 
-    navigator.findElement(By.id("CaptchaInputText")).click();
+        navigator.findElement(By.id(contato)).click();
 
-  }
+        if (contato.equals("radioContatoSim")) {
 
-  @org.junit.Test
-  public void residenciasOutros() throws InterruptedException {
+            navigator.findElement(By.id(acompanhar)).click();
 
-    navigator.get(baseUrl);
+        }
 
-    //Primeira Página
+        navigator.findElement(By.id("checkDeclaracao")).click();
 
-    navigator.findElement(By.id("nome")).sendKeys(nome);
-    Thread.sleep(1000);
-    WebElement cpf = navigator.findElement(By.id("cpf"));
-    cpf.click();
-    cpf.sendKeys(numerocpf);
-    navigator.findElement(By.id("rg")).sendKeys(rg);
-    navigator.findElement(By.id("email")).sendKeys("cicero_oliverio@hotmail.com");
-    navigator.findElement(By.id("emailVerifique")).sendKeys("cicero_oliverio@hotmail.com");
-    navigator.findElement(By.id("ddd")).sendKeys("11");
-    navigator.findElement(By.id("telefone")).sendKeys("975697393");
-    navigator.findElement(By.id("botaoCadastroProximo")).click();
-
-    //Segunda Página
-
-    //navigator.findElement(By.id("municipio")).click();
-    WebElement municipio = navigator
-        .findElement(By.xpath("//*[contains(text(), 'SAO BERNARDO DO CAMPO')]"));
-    municipio.click();
-
-    WebElement logradouro = navigator.findElement(By.id("logradouro"));
-
-    logradouro.sendKeys(logradouroCasa);
-    logradouro.sendKeys(Keys.TAB);
-
-    if (logradouroCasa.equals("AVENIDA MIRÓ VETORAZO")) {
-      navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr[2]/td[1]")).click();
-    } else {
-      navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
-    }
-
-    navigator.findElement(By.id("numero")).sendKeys(numero);
-
-    navigator.findElement(By.id("complemento")).sendKeys("Casa");
-    WebElement cep = navigator.findElement(By.id("cep"));
-    cep.click();
-    cep.sendKeys(numerocep);
-
-    navigator.findElement(By.id("botaoEnderecoProximo")).click();
-
-    // Terceira Página
-
-    navigator.findElement(By.xpath("//*[@id=\"Pergunta_1\"]/div[3]/label")).click();
-
-    navigator.findElement(
-        By.xpath("/html/body/div[1]/form/div[3]/div/div[3]/div/div[6]/div[6]/label/input")).click();
-
-    navigator.findElement(By.id("botaoOrigemProximo")).click();
-
-    // Última Página
-
-    WebElement caixadeTexto = navigator.findElement(By.id("textoComplemento"));
-
-    caixadeTexto.click();
-
-    caixadeTexto.sendKeys(reclamacao);
-
-    navigator.findElement(By.id(contato)).click();
-
-    if (contato.equals("radioContatoSim")) {
-
-      navigator.findElement(By.id(acompanhar)).click();
+        navigator.findElement(By.id("CaptchaInputText")).click();
 
     }
 
-    navigator.findElement(By.id("checkDeclaracao")).click();
+    @org.junit.Test
+    public void residenciasOutros() throws InterruptedException {
 
-    navigator.findElement(By.id("CaptchaInputText")).click();
+        navigator.get(baseUrl);
 
-  }
+        //Primeira Página
 
-  @org.junit.Test
-  public void residenciasObras() throws InterruptedException {
+        if (anonimo == true) {
+            navigator.findElement(By.id("anonimo")).click();
+            navigator.findElement(By.id("botaoCadastroProximo")).click();
+        } else {
+            navigator.findElement(By.id("nome")).sendKeys(nome);
+            Thread.sleep(1000);
+            WebElement cpf = navigator.findElement(By.id("cpf"));
+            cpf.click();
+            cpf.sendKeys(numerocpf);
+            navigator.findElement(By.id("rg")).sendKeys(rg);
+            navigator.findElement(By.id("email")).sendKeys("cicero_oliverio@hotmail.com");
+            navigator.findElement(By.id("emailVerifique")).sendKeys("cicero_oliverio@hotmail.com");
+            navigator.findElement(By.id("ddd")).sendKeys("11");
+            navigator.findElement(By.id("telefone")).sendKeys("975697393");
+            navigator.findElement(By.id("botaoCadastroProximo")).click();
+        }
 
-    navigator.get(baseUrl);
+        //Segunda Página
 
-    //Primeira Página
+        //navigator.findElement(By.id("municipio")).click();
+        WebElement municipio = navigator
+                .findElement(By.xpath("//*[contains(text(), 'SAO BERNARDO DO CAMPO')]"));
+        municipio.click();
 
-    navigator.findElement(By.id("nome")).sendKeys(nome);
-    Thread.sleep(1000);
-    WebElement cpf = navigator.findElement(By.id("cpf"));
-    cpf.click();
-    cpf.sendKeys(numerocpf);
-    navigator.findElement(By.id("rg")).sendKeys(rg);
-    navigator.findElement(By.id("email")).sendKeys("cicero_oliverio@hotmail.com");
-    navigator.findElement(By.id("emailVerifique")).sendKeys("cicero_oliverio@hotmail.com");
-    navigator.findElement(By.id("ddd")).sendKeys("11");
-    navigator.findElement(By.id("telefone")).sendKeys("975697393");
-    navigator.findElement(By.id("botaoCadastroProximo")).click();
+        WebElement logradouro = navigator.findElement(By.id("logradouro"));
 
-    //Segunda Página
+        logradouro.sendKeys(logradouroCasa);
+        logradouro.sendKeys(Keys.TAB);
 
-    //navigator.findElement(By.id("municipio")).click();
-    WebElement municipio = navigator
-        .findElement(By.xpath("//*[contains(text(), 'SAO BERNARDO DO CAMPO')]"));
-    municipio.click();
+        if (logradouroCasa.equals("AVENIDA MIRÓ VETORAZO")) {
+            navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr[2]/td[1]")).click();
+        } else {
+            navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
+        }
 
-    WebElement logradouro = navigator.findElement(By.id("logradouro"));
+        navigator.findElement(By.id("numero")).sendKeys(numero);
 
-    logradouro.sendKeys(logradouroCasa);
-    logradouro.sendKeys(Keys.TAB);
-    if (logradouroCasa.equals("AVENIDA MIRÓ VETORAZO")) {
-      navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr[2]/td[1]")).click();
-    } else {
-      navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
-    }
+        navigator.findElement(By.id("complemento")).sendKeys("Casa");
+        WebElement cep = navigator.findElement(By.id("cep"));
+        cep.click();
+        cep.sendKeys(numerocep);
 
-    navigator.findElement(By.id("numero")).sendKeys(numero);
+        navigator.findElement(By.id("botaoEnderecoProximo")).click();
 
-    navigator.findElement(By.id("complemento")).sendKeys("Casa");
-    WebElement cep = navigator.findElement(By.id("cep"));
-    cep.click();
-    cep.sendKeys(numerocep);
+        // Terceira Página
 
-    navigator.findElement(By.id("botaoEnderecoProximo")).click();
+        navigator.findElement(By.xpath("//*[@id=\"Pergunta_1\"]/div[3]/label")).click();
 
-    // Terceira Página
+        navigator.findElement(
+                By.xpath("/html/body/div[1]/form/div[3]/div/div[3]/div/div[6]/div[6]/label/input")).click();
 
-    navigator.findElement(By.xpath("//*[@id=\"Pergunta_1\"]/div[3]/label")).click();
+        navigator.findElement(By.id("botaoOrigemProximo")).click();
 
-    navigator.findElement(
-        By.xpath("/html/body/div[1]/form/div[3]/div/div[3]/div/div[6]/div[2]/label/input")).click();
+        // Última Página
 
-    navigator.findElement(By.id("botaoOrigemProximo")).click();
+        WebElement caixadeTexto = navigator.findElement(By.id("textoComplemento"));
 
-    // Última Página
+        caixadeTexto.click();
 
-    WebElement caixadeTexto = navigator.findElement(By.id("textoComplemento"));
+        caixadeTexto.sendKeys(reclamacao);
 
-    caixadeTexto.click();
+        navigator.findElement(By.id(contato)).click();
 
-    caixadeTexto.sendKeys(reclamacao);
+        if (contato.equals("radioContatoSim")) {
 
-    navigator.findElement(By.id(contato)).click();
+            navigator.findElement(By.id(acompanhar)).click();
 
-    if (contato.equals("radioContatoSim")) {
+        }
 
-      navigator.findElement(By.id(acompanhar)).click();
+        navigator.findElement(By.id("checkDeclaracao")).click();
 
-    }
-
-    navigator.findElement(By.id("checkDeclaracao")).click();
-
-    navigator.findElement(By.id("CaptchaInputText")).click();
-
-  }
-
-  @org.junit.Test
-  public void residenciasMusicas() throws InterruptedException {
-
-    navigator.get(baseUrl);
-
-    //Primeira Página
-
-    navigator.findElement(By.id("nome")).sendKeys(nome);
-    Thread.sleep(1000);
-    WebElement cpf = navigator.findElement(By.id("cpf"));
-    cpf.click();
-    cpf.sendKeys(numerocpf);
-    navigator.findElement(By.id("rg")).sendKeys(rg);
-    navigator.findElement(By.id("email")).sendKeys("cicero_oliverio@hotmail.com");
-    navigator.findElement(By.id("emailVerifique")).sendKeys("cicero_oliverio@hotmail.com");
-    navigator.findElement(By.id("ddd")).sendKeys("11");
-    navigator.findElement(By.id("telefone")).sendKeys("975697393");
-    navigator.findElement(By.id("botaoCadastroProximo")).click();
-
-    //Segunda Página
-
-    //navigator.findElement(By.id("municipio")).click();
-    WebElement municipio = navigator
-        .findElement(By.xpath("//*[contains(text(), 'SAO BERNARDO DO CAMPO')]"));
-    municipio.click();
-
-    WebElement logradouro = navigator.findElement(By.id("logradouro"));
-
-    logradouro.sendKeys(logradouroCasa);
-    logradouro.sendKeys(Keys.TAB);
-    if (logradouroCasa.equals("AVENIDA MIRÓ VETORAZO")) {
-      navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr[2]/td[1]")).click();
-    } else {
-      navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
-    }
-
-    navigator.findElement(By.id("numero")).sendKeys(numero);
-
-    navigator.findElement(By.id("complemento")).sendKeys("Casa");
-    WebElement cep = navigator.findElement(By.id("cep"));
-    cep.click();
-    cep.sendKeys(numerocep);
-
-    navigator.findElement(By.id("botaoEnderecoProximo")).click();
-
-    // Terceira Página
-
-    navigator.findElement(By.xpath("//*[@id=\"Pergunta_1\"]/div[3]/label")).click();
-
-    navigator.findElement(
-        By.xpath("/html/body/div[1]/form/div[3]/div/div[3]/div/div[6]/div[3]/label/input")).click();
-
-    navigator.findElement(By.id("botaoOrigemProximo")).click();
-
-    // Última Página
-
-    WebElement caixadeTexto = navigator.findElement(By.id("textoComplemento"));
-
-    caixadeTexto.click();
-
-    caixadeTexto.sendKeys(reclamacao);
-
-    navigator.findElement(By.id(contato)).click();
-
-    if (contato.equals("radioContatoSim")) {
-
-      navigator.findElement(By.id(acompanhar)).click();
+        navigator.findElement(By.id("CaptchaInputText")).click();
 
     }
 
-    navigator.findElement(By.id("checkDeclaracao")).click();
+    @org.junit.Test
+    public void residenciasObras() throws InterruptedException {
 
-    navigator.findElement(By.id("CaptchaInputText")).click();
+        navigator.get(baseUrl);
 
-  }
+        //Primeira Página
 
-  @org.junit.Test
-  public void viaPublicaBailePancadao() throws InterruptedException {
+        if (anonimo == true) {
+            navigator.findElement(By.id("anonimo")).click();
+            navigator.findElement(By.id("botaoCadastroProximo")).click();
+        } else {
+            navigator.findElement(By.id("nome")).sendKeys(nome);
+            Thread.sleep(1000);
+            WebElement cpf = navigator.findElement(By.id("cpf"));
+            cpf.click();
+            cpf.sendKeys(numerocpf);
+            navigator.findElement(By.id("rg")).sendKeys(rg);
+            navigator.findElement(By.id("email")).sendKeys("cicero_oliverio@hotmail.com");
+            navigator.findElement(By.id("emailVerifique")).sendKeys("cicero_oliverio@hotmail.com");
+            navigator.findElement(By.id("ddd")).sendKeys("11");
+            navigator.findElement(By.id("telefone")).sendKeys("975697393");
+            navigator.findElement(By.id("botaoCadastroProximo")).click();
+        }
 
-    navigator.get(baseUrl);
+        //Segunda Página
 
-    //Primeira Página
+        //navigator.findElement(By.id("municipio")).click();
+        WebElement municipio = navigator
+                .findElement(By.xpath("//*[contains(text(), 'SAO BERNARDO DO CAMPO')]"));
+        municipio.click();
 
-    navigator.findElement(By.id("nome")).sendKeys(nome);
-    Thread.sleep(1000);
-    WebElement cpf = navigator.findElement(By.id("cpf"));
-    cpf.click();
-    cpf.sendKeys(numerocpf);
-    navigator.findElement(By.id("rg")).sendKeys(rg);
-    navigator.findElement(By.id("email")).sendKeys("cicero_oliverio@hotmail.com");
-    navigator.findElement(By.id("emailVerifique")).sendKeys("cicero_oliverio@hotmail.com");
-    navigator.findElement(By.id("ddd")).sendKeys("11");
-    navigator.findElement(By.id("telefone")).sendKeys("975697393");
-    navigator.findElement(By.id("botaoCadastroProximo")).click();
+        WebElement logradouro = navigator.findElement(By.id("logradouro"));
 
-    //Segunda Página
+        logradouro.sendKeys(logradouroCasa);
+        logradouro.sendKeys(Keys.TAB);
+        if (logradouroCasa.equals("AVENIDA MIRÓ VETORAZO")) {
+            navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr[2]/td[1]")).click();
+        } else {
+            navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
+        }
 
-    //navigator.findElement(By.id("municipio")).click();
-    WebElement municipio = navigator
-        .findElement(By.xpath("//*[contains(text(), 'SAO BERNARDO DO CAMPO')]"));
-    municipio.click();
+        navigator.findElement(By.id("numero")).sendKeys(numero);
 
-    WebElement logradouro = navigator.findElement(By.id("logradouro"));
+        navigator.findElement(By.id("complemento")).sendKeys("Casa");
+        WebElement cep = navigator.findElement(By.id("cep"));
+        cep.click();
+        cep.sendKeys(numerocep);
 
-    logradouro.sendKeys(logradouroCasa);
-    logradouro.sendKeys(Keys.TAB);
-    if (logradouroCasa.equals("AVENIDA MIRÓ VETORAZO")) {
-      navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr[2]/td[1]")).click();
-    } else {
-      navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
-    }
+        navigator.findElement(By.id("botaoEnderecoProximo")).click();
 
-    navigator.findElement(By.id("numero")).sendKeys(numero);
+        // Terceira Página
 
-    navigator.findElement(By.id("complemento")).sendKeys("Casa");
-    WebElement cep = navigator.findElement(By.id("cep"));
-    cep.click();
-    cep.sendKeys(numerocep);
+        navigator.findElement(By.xpath("//*[@id=\"Pergunta_1\"]/div[3]/label")).click();
 
-    navigator.findElement(By.id("botaoEnderecoProximo")).click();
+        navigator.findElement(
+                By.xpath("/html/body/div[1]/form/div[3]/div/div[3]/div/div[6]/div[2]/label/input")).click();
 
-    // Terceira Página
+        navigator.findElement(By.id("botaoOrigemProximo")).click();
 
-    navigator.findElement(By.xpath("//*[@id=\"Pergunta_1\"]/div[2]/label")).click();
+        // Última Página
 
-    navigator.findElement(By.xpath(
-        "//*[@id=\"PerguntaRespostaAtendimento_1__AlternativaRespostaAtendimento_CodigoAlternativaResposta\"]"))
-        .click();
+        WebElement caixadeTexto = navigator.findElement(By.id("textoComplemento"));
 
-    navigator.findElement(By.id("botaoOrigemProximo")).click();
+        caixadeTexto.click();
 
-    // Última Página
+        caixadeTexto.sendKeys(reclamacao);
 
-    WebElement caixadeTexto = navigator.findElement(By.id("textoComplemento"));
+        navigator.findElement(By.id(contato)).click();
 
-    caixadeTexto.click();
+        if (contato.equals("radioContatoSim")) {
 
-    caixadeTexto.sendKeys(reclamacao);
+            navigator.findElement(By.id(acompanhar)).click();
 
-    navigator.findElement(By.id(contato)).click();
+        }
 
-    if (contato.equals("radioContatoSim")) {
+        navigator.findElement(By.id("checkDeclaracao")).click();
 
-      navigator.findElement(By.id(acompanhar)).click();
-
-    }
-
-    navigator.findElement(By.id("checkDeclaracao")).click();
-
-    navigator.findElement(By.id("CaptchaInputText")).click();
-
-  }
-
-  @org.junit.Test
-  public void viaPublicaAglomeracaoDePessoas() throws InterruptedException {
-
-    navigator.get(baseUrl);
-
-    //Primeira Página
-
-    navigator.findElement(By.id("nome")).sendKeys(nome);
-    Thread.sleep(1000);
-    WebElement cpf = navigator.findElement(By.id("cpf"));
-    cpf.click();
-    cpf.sendKeys(numerocpf);
-    navigator.findElement(By.id("rg")).sendKeys(rg);
-    navigator.findElement(By.id("email")).sendKeys("cicero_oliverio@hotmail.com");
-    navigator.findElement(By.id("emailVerifique")).sendKeys("cicero_oliverio@hotmail.com");
-    navigator.findElement(By.id("ddd")).sendKeys("11");
-    navigator.findElement(By.id("telefone")).sendKeys("975697393");
-    navigator.findElement(By.id("botaoCadastroProximo")).click();
-
-    //Segunda Página
-
-    //navigator.findElement(By.id("municipio")).click();
-    WebElement municipio = navigator
-        .findElement(By.xpath("//*[contains(text(), 'SAO BERNARDO DO CAMPO')]"));
-    municipio.click();
-
-    WebElement logradouro = navigator.findElement(By.id("logradouro"));
-
-    logradouro.sendKeys(logradouroCasa);
-    logradouro.sendKeys(Keys.TAB);
-    if (logradouroCasa.equals("AVENIDA MIRÓ VETORAZO")) {
-      navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr[2]/td[1]")).click();
-    } else {
-      navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
-    }
-
-    navigator.findElement(By.id("numero")).sendKeys(numero);
-
-    navigator.findElement(By.id("complemento")).sendKeys("Casa");
-    WebElement cep = navigator.findElement(By.id("cep"));
-    cep.click();
-    cep.sendKeys(numerocep);
-
-    navigator.findElement(By.id("botaoEnderecoProximo")).click();
-
-    // Terceira Página
-
-    navigator.findElement(By.xpath("//*[@id=\"Pergunta_1\"]/div[2]/label")).click();
-
-    navigator.findElement(By.xpath("//*[@id=\"Pergunta_2\"]/div[7]/label")).click();
-
-    navigator.findElement(By.xpath("//div[@id='Pergunta_4']//div[2]//label[1]//input[1]")).click();
-
-    navigator.findElement(By.id("botaoOrigemProximo")).click();
-
-    // Última Página
-
-    WebElement caixadeTexto = navigator.findElement(By.id("textoComplemento"));
-
-    caixadeTexto.click();
-
-    caixadeTexto.sendKeys(reclamacao);
-
-    navigator.findElement(By.id(contato)).click();
-
-    if (contato.equals("radioContatoSim")) {
-
-      navigator.findElement(By.id(acompanhar)).click();
+        navigator.findElement(By.id("CaptchaInputText")).click();
 
     }
 
-    navigator.findElement(By.id("checkDeclaracao")).click();
+    @org.junit.Test
+    public void residenciasMusicas() throws InterruptedException {
 
-    navigator.findElement(By.id("CaptchaInputText")).click();
+        navigator.get(baseUrl);
 
-  }
+        //Primeira Página
 
-  @org.junit.Test
-  public void viaPublicaAparelhodeSom() throws InterruptedException {
+        if (anonimo == true) {
+            navigator.findElement(By.id("anonimo")).click();
+            navigator.findElement(By.id("botaoCadastroProximo")).click();
+        } else {
+            navigator.findElement(By.id("nome")).sendKeys(nome);
+            Thread.sleep(1000);
+            WebElement cpf = navigator.findElement(By.id("cpf"));
+            cpf.click();
+            cpf.sendKeys(numerocpf);
+            navigator.findElement(By.id("rg")).sendKeys(rg);
+            navigator.findElement(By.id("email")).sendKeys("cicero_oliverio@hotmail.com");
+            navigator.findElement(By.id("emailVerifique")).sendKeys("cicero_oliverio@hotmail.com");
+            navigator.findElement(By.id("ddd")).sendKeys("11");
+            navigator.findElement(By.id("telefone")).sendKeys("975697393");
+            navigator.findElement(By.id("botaoCadastroProximo")).click();
+        }
 
-    navigator.get(baseUrl);
+        //Segunda Página
 
-    //Primeira Página
+        //navigator.findElement(By.id("municipio")).click();
+        WebElement municipio = navigator
+                .findElement(By.xpath("//*[contains(text(), 'SAO BERNARDO DO CAMPO')]"));
+        municipio.click();
 
-    navigator.findElement(By.id("nome")).sendKeys(nome);
-    Thread.sleep(1000);
-    WebElement cpf = navigator.findElement(By.id("cpf"));
-    cpf.click();
-    cpf.sendKeys(numerocpf);
-    navigator.findElement(By.id("rg")).sendKeys(rg);
-    navigator.findElement(By.id("email")).sendKeys("cicero_oliverio@hotmail.com");
-    navigator.findElement(By.id("emailVerifique")).sendKeys("cicero_oliverio@hotmail.com");
-    navigator.findElement(By.id("ddd")).sendKeys("11");
-    navigator.findElement(By.id("telefone")).sendKeys("975697393");
-    navigator.findElement(By.id("botaoCadastroProximo")).click();
+        WebElement logradouro = navigator.findElement(By.id("logradouro"));
 
-    //Segunda Página
+        logradouro.sendKeys(logradouroCasa);
+        logradouro.sendKeys(Keys.TAB);
+        if (logradouroCasa.equals("AVENIDA MIRÓ VETORAZO")) {
+            navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr[2]/td[1]")).click();
+        } else {
+            navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
+        }
 
-    //navigator.findElement(By.id("municipio")).click();
-    WebElement municipio = navigator
-        .findElement(By.xpath("//*[contains(text(), 'SAO BERNARDO DO CAMPO')]"));
-    municipio.click();
+        navigator.findElement(By.id("numero")).sendKeys(numero);
 
-    WebElement logradouro = navigator.findElement(By.id("logradouro"));
+        navigator.findElement(By.id("complemento")).sendKeys("Casa");
+        WebElement cep = navigator.findElement(By.id("cep"));
+        cep.click();
+        cep.sendKeys(numerocep);
 
-    logradouro.sendKeys(logradouroCasa);
-    logradouro.sendKeys(Keys.TAB);
-    if (logradouroCasa.equals("AVENIDA MIRÓ VETORAZO")) {
-      navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr[2]/td[1]")).click();
-    } else {
-      navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
-    }
+        navigator.findElement(By.id("botaoEnderecoProximo")).click();
 
-    navigator.findElement(By.id("numero")).sendKeys(numero);
+        // Terceira Página
 
-    navigator.findElement(By.id("complemento")).sendKeys("Casa");
-    WebElement cep = navigator.findElement(By.id("cep"));
-    cep.click();
-    cep.sendKeys(numerocep);
+        navigator.findElement(By.xpath("//*[@id=\"Pergunta_1\"]/div[3]/label")).click();
 
-    navigator.findElement(By.id("botaoEnderecoProximo")).click();
+        navigator.findElement(
+                By.xpath("/html/body/div[1]/form/div[3]/div/div[3]/div/div[6]/div[3]/label/input")).click();
 
-    // Terceira Página
+        navigator.findElement(By.id("botaoOrigemProximo")).click();
 
-    navigator.findElement(By.xpath("//*[@id=\"Pergunta_1\"]/div[2]/label")).click();
+        // Última Página
 
-    navigator.findElement(By.xpath("//*[@id=\"Pergunta_2\"]/div[7]/label")).click();
+        WebElement caixadeTexto = navigator.findElement(By.id("textoComplemento"));
 
-    navigator.findElement(
-        By.xpath("/html/body/div[1]/form/div[3]/div/div[3]/div/div[2]/div[3]/label/input")).click();
+        caixadeTexto.click();
 
-    navigator.findElement(By.id("botaoOrigemProximo")).click();
+        caixadeTexto.sendKeys(reclamacao);
 
-    // Última Página
+        navigator.findElement(By.id(contato)).click();
 
-    WebElement caixadeTexto = navigator.findElement(By.id("textoComplemento"));
+        if (contato.equals("radioContatoSim")) {
 
-    caixadeTexto.click();
+            navigator.findElement(By.id(acompanhar)).click();
 
-    caixadeTexto.sendKeys(reclamacao);
+        }
 
-    navigator.findElement(By.id(contato)).click();
+        navigator.findElement(By.id("checkDeclaracao")).click();
 
-    if (contato.equals("radioContatoSim")) {
-
-      navigator.findElement(By.id(acompanhar)).click();
-
-    }
-
-    navigator.findElement(By.id("checkDeclaracao")).click();
-
-    navigator.findElement(By.id("CaptchaInputText")).click();
-
-  }
-
-  @org.junit.Test
-  public void viaPublicaObras() throws InterruptedException {
-
-    navigator.get(baseUrl);
-
-    //Primeira Página
-
-    navigator.findElement(By.id("nome")).sendKeys(nome);
-    Thread.sleep(1000);
-    WebElement cpf = navigator.findElement(By.id("cpf"));
-    cpf.click();
-    cpf.sendKeys(numerocpf);
-    navigator.findElement(By.id("rg")).sendKeys(rg);
-    navigator.findElement(By.id("email")).sendKeys("cicero_oliverio@hotmail.com");
-    navigator.findElement(By.id("emailVerifique")).sendKeys("cicero_oliverio@hotmail.com");
-    navigator.findElement(By.id("ddd")).sendKeys("11");
-    navigator.findElement(By.id("telefone")).sendKeys("975697393");
-    navigator.findElement(By.id("botaoCadastroProximo")).click();
-
-    //Segunda Página
-
-    //navigator.findElement(By.id("municipio")).click();
-    WebElement municipio = navigator
-        .findElement(By.xpath("//*[contains(text(), 'SAO BERNARDO DO CAMPO')]"));
-    municipio.click();
-
-    WebElement logradouro = navigator.findElement(By.id("logradouro"));
-
-    logradouro.sendKeys(logradouroCasa);
-    logradouro.sendKeys(Keys.TAB);
-    if (logradouroCasa.equals("AVENIDA MIRÓ VETORAZO")) {
-      navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr[2]/td[1]")).click();
-    } else {
-      navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
-    }
-
-    navigator.findElement(By.id("numero")).sendKeys(numero);
-
-    navigator.findElement(By.id("complemento")).sendKeys("Casa");
-    WebElement cep = navigator.findElement(By.id("cep"));
-    cep.click();
-    cep.sendKeys(numerocep);
-
-    navigator.findElement(By.id("botaoEnderecoProximo")).click();
-
-    // Terceira Página
-
-    navigator.findElement(By.xpath("//*[@id=\"Pergunta_1\"]/div[2]/label")).click();
-
-    navigator.findElement(By.xpath("//*[@id=\"Pergunta_2\"]/div[7]/label")).click();
-
-    navigator.findElement(
-        By.xpath("/html/body/div[1]/form/div[3]/div/div[3]/div/div[2]/div[5]/label/input")).click();
-
-    navigator.findElement(
-        By.xpath("/html/body/div[1]/form/div[3]/div/div[3]/div/div[3]/div[3]/label/input")).click();
-
-    navigator.findElement(By.id("botaoOrigemProximo")).click();
-
-    // Última Página
-
-    WebElement caixadeTexto = navigator.findElement(By.id("textoComplemento"));
-
-    caixadeTexto.click();
-
-    caixadeTexto.sendKeys(reclamacao);
-
-    navigator.findElement(By.id(contato)).click();
-
-    if (contato.equals("radioContatoSim")) {
-
-      navigator.findElement(By.id(acompanhar)).click();
+        navigator.findElement(By.id("CaptchaInputText")).click();
 
     }
 
-    navigator.findElement(By.id("checkDeclaracao")).click();
+    @org.junit.Test
+    public void viaPublicaBailePancadao() throws InterruptedException {
 
-    navigator.findElement(By.id("CaptchaInputText")).click();
+        navigator.get(baseUrl);
 
-  }
+        //Primeira Página
 
-  @org.junit.Test
-  public void viaPublicaCriancas() throws InterruptedException {
+        if (anonimo == true) {
+            navigator.findElement(By.id("anonimo")).click();
+            navigator.findElement(By.id("botaoCadastroProximo")).click();
+        } else {
+            navigator.findElement(By.id("nome")).sendKeys(nome);
+            Thread.sleep(1000);
+            WebElement cpf = navigator.findElement(By.id("cpf"));
+            cpf.click();
+            cpf.sendKeys(numerocpf);
+            navigator.findElement(By.id("rg")).sendKeys(rg);
+            navigator.findElement(By.id("email")).sendKeys("cicero_oliverio@hotmail.com");
+            navigator.findElement(By.id("emailVerifique")).sendKeys("cicero_oliverio@hotmail.com");
+            navigator.findElement(By.id("ddd")).sendKeys("11");
+            navigator.findElement(By.id("telefone")).sendKeys("975697393");
+            navigator.findElement(By.id("botaoCadastroProximo")).click();
+        }
 
-    if (possuiCrianca = true) {
-      navigator.get(baseUrl);
+        //Segunda Página
 
-      //Primeira Página
+        //navigator.findElement(By.id("municipio")).click();
+        WebElement municipio = navigator
+                .findElement(By.xpath("//*[contains(text(), 'SAO BERNARDO DO CAMPO')]"));
+        municipio.click();
 
-      navigator.findElement(By.id("nome")).sendKeys(nome);
-      Thread.sleep(1000);
-      WebElement cpf = navigator.findElement(By.id("cpf"));
-      cpf.click();
-      cpf.sendKeys(numerocpf);
-      navigator.findElement(By.id("rg")).sendKeys(rg);
-      navigator.findElement(By.id("email")).sendKeys("cicero_oliverio@hotmail.com");
-      navigator.findElement(By.id("emailVerifique")).sendKeys("cicero_oliverio@hotmail.com");
-      navigator.findElement(By.id("ddd")).sendKeys("11");
-      navigator.findElement(By.id("telefone")).sendKeys("975697393");
-      navigator.findElement(By.id("botaoCadastroProximo")).click();
+        WebElement logradouro = navigator.findElement(By.id("logradouro"));
 
-      //Segunda Página
+        logradouro.sendKeys(logradouroCasa);
+        logradouro.sendKeys(Keys.TAB);
+        if (logradouroCasa.equals("AVENIDA MIRÓ VETORAZO")) {
+            navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr[2]/td[1]")).click();
+        } else {
+            navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
+        }
 
-      //navigator.findElement(By.id("municipio")).click();
-      WebElement municipio = navigator
-          .findElement(By.xpath("//*[contains(text(), 'SAO BERNARDO DO CAMPO')]"));
-      municipio.click();
+        navigator.findElement(By.id("numero")).sendKeys(numero);
 
-      WebElement logradouro = navigator.findElement(By.id("logradouro"));
+        navigator.findElement(By.id("complemento")).sendKeys("Casa");
+        WebElement cep = navigator.findElement(By.id("cep"));
+        cep.click();
+        cep.sendKeys(numerocep);
 
-      logradouro.sendKeys(logradouroCasa);
-      logradouro.sendKeys(Keys.TAB);
-      if (logradouroCasa.equals("AVENIDA MIRÓ VETORAZO")) {
-        navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr[2]/td[1]")).click();
-      } else {
-        navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
-      }
-      navigator.findElement(By.id("numero")).sendKeys(numero);
+        navigator.findElement(By.id("botaoEnderecoProximo")).click();
 
-      navigator.findElement(By.id("complemento")).sendKeys("Casa");
-      WebElement cep = navigator.findElement(By.id("cep"));
-      cep.click();
-      cep.sendKeys(numerocep);
+        // Terceira Página
 
-      navigator.findElement(By.id("botaoEnderecoProximo")).click();
+        navigator.findElement(By.xpath("//*[@id=\"Pergunta_1\"]/div[2]/label")).click();
 
-      // Terceira Página
+        navigator.findElement(By.xpath(
+                "//*[@id=\"PerguntaRespostaAtendimento_1__AlternativaRespostaAtendimento_CodigoAlternativaResposta\"]"))
+                .click();
 
-      navigator.findElement(By.xpath("//*[@id=\"Pergunta_1\"]/div[2]/label")).click();
+        navigator.findElement(By.id("botaoOrigemProximo")).click();
 
-      navigator.findElement(By.xpath("//*[@id=\"Pergunta_2\"]/div[8]/label")).click();
+        // Última Página
+
+        WebElement caixadeTexto = navigator.findElement(By.id("textoComplemento"));
+
+        caixadeTexto.click();
+
+        caixadeTexto.sendKeys(reclamacao);
+
+        navigator.findElement(By.id(contato)).click();
+
+        if (contato.equals("radioContatoSim")) {
+
+            navigator.findElement(By.id(acompanhar)).click();
+
+        }
+
+        navigator.findElement(By.id("checkDeclaracao")).click();
+
+        navigator.findElement(By.id("CaptchaInputText")).click();
+
+    }
+
+    @org.junit.Test
+    public void viaPublicaAglomeracaoDePessoas() throws InterruptedException {
+
+        navigator.get(baseUrl);
+
+        //Primeira Página
+
+        if (anonimo == true) {
+            navigator.findElement(By.id("anonimo")).click();
+            navigator.findElement(By.id("botaoCadastroProximo")).click();
+        } else {
+            navigator.findElement(By.id("nome")).sendKeys(nome);
+            Thread.sleep(1000);
+            WebElement cpf = navigator.findElement(By.id("cpf"));
+            cpf.click();
+            cpf.sendKeys(numerocpf);
+            navigator.findElement(By.id("rg")).sendKeys(rg);
+            navigator.findElement(By.id("email")).sendKeys("cicero_oliverio@hotmail.com");
+            navigator.findElement(By.id("emailVerifique")).sendKeys("cicero_oliverio@hotmail.com");
+            navigator.findElement(By.id("ddd")).sendKeys("11");
+            navigator.findElement(By.id("telefone")).sendKeys("975697393");
+            navigator.findElement(By.id("botaoCadastroProximo")).click();
+        }
+
+        //Segunda Página
+
+        //navigator.findElement(By.id("municipio")).click();
+        WebElement municipio = navigator
+                .findElement(By.xpath("//*[contains(text(), 'SAO BERNARDO DO CAMPO')]"));
+        municipio.click();
+
+        WebElement logradouro = navigator.findElement(By.id("logradouro"));
+
+        logradouro.sendKeys(logradouroCasa);
+        logradouro.sendKeys(Keys.TAB);
+        if (logradouroCasa.equals("AVENIDA MIRÓ VETORAZO")) {
+            navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr[2]/td[1]")).click();
+        } else {
+            navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
+        }
+
+        navigator.findElement(By.id("numero")).sendKeys(numero);
+
+        navigator.findElement(By.id("complemento")).sendKeys("Casa");
+        WebElement cep = navigator.findElement(By.id("cep"));
+        cep.click();
+        cep.sendKeys(numerocep);
+
+        navigator.findElement(By.id("botaoEnderecoProximo")).click();
+
+        // Terceira Página
+
+        navigator.findElement(By.xpath("//*[@id=\"Pergunta_1\"]/div[2]/label")).click();
+
+        navigator.findElement(By.xpath("//*[@id=\"Pergunta_2\"]/div[7]/label")).click();
+
+        navigator.findElement(By.xpath("//div[@id='Pergunta_4']//div[2]//label[1]//input[1]")).click();
+
+        navigator.findElement(By.id("botaoOrigemProximo")).click();
+
+        // Última Página
+
+        WebElement caixadeTexto = navigator.findElement(By.id("textoComplemento"));
+
+        caixadeTexto.click();
+
+        caixadeTexto.sendKeys(reclamacao);
+
+        navigator.findElement(By.id(contato)).click();
+
+        if (contato.equals("radioContatoSim")) {
+
+            navigator.findElement(By.id(acompanhar)).click();
+
+        }
+
+        navigator.findElement(By.id("checkDeclaracao")).click();
+
+        navigator.findElement(By.id("CaptchaInputText")).click();
+
+    }
+
+    @org.junit.Test
+    public void viaPublicaAparelhodeSom() throws InterruptedException {
+
+        navigator.get(baseUrl);
+
+        //Primeira Página
+
+        if (anonimo == true) {
+            navigator.findElement(By.id("anonimo")).click();
+            navigator.findElement(By.id("botaoCadastroProximo")).click();
+        } else {
+            navigator.findElement(By.id("nome")).sendKeys(nome);
+            Thread.sleep(1000);
+            WebElement cpf = navigator.findElement(By.id("cpf"));
+            cpf.click();
+            cpf.sendKeys(numerocpf);
+            navigator.findElement(By.id("rg")).sendKeys(rg);
+            navigator.findElement(By.id("email")).sendKeys("cicero_oliverio@hotmail.com");
+            navigator.findElement(By.id("emailVerifique")).sendKeys("cicero_oliverio@hotmail.com");
+            navigator.findElement(By.id("ddd")).sendKeys("11");
+            navigator.findElement(By.id("telefone")).sendKeys("975697393");
+            navigator.findElement(By.id("botaoCadastroProximo")).click();
+        }
+
+        //Segunda Página
+
+        //navigator.findElement(By.id("municipio")).click();
+        WebElement municipio = navigator
+                .findElement(By.xpath("//*[contains(text(), 'SAO BERNARDO DO CAMPO')]"));
+        municipio.click();
+
+        WebElement logradouro = navigator.findElement(By.id("logradouro"));
+
+        logradouro.sendKeys(logradouroCasa);
+        logradouro.sendKeys(Keys.TAB);
+        if (logradouroCasa.equals("AVENIDA MIRÓ VETORAZO")) {
+            navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr[2]/td[1]")).click();
+        } else {
+            navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
+        }
+
+        navigator.findElement(By.id("numero")).sendKeys(numero);
+
+        navigator.findElement(By.id("complemento")).sendKeys("Casa");
+        WebElement cep = navigator.findElement(By.id("cep"));
+        cep.click();
+        cep.sendKeys(numerocep);
+
+        navigator.findElement(By.id("botaoEnderecoProximo")).click();
+
+        // Terceira Página
+
+        navigator.findElement(By.xpath("//*[@id=\"Pergunta_1\"]/div[2]/label")).click();
+
+        navigator.findElement(By.xpath("//*[@id=\"Pergunta_2\"]/div[7]/label")).click();
+
+        navigator.findElement(
+                By.xpath("/html/body/div[1]/form/div[3]/div/div[3]/div/div[2]/div[3]/label/input")).click();
+
+        navigator.findElement(By.id("botaoOrigemProximo")).click();
+
+        // Última Página
+
+        WebElement caixadeTexto = navigator.findElement(By.id("textoComplemento"));
+
+        caixadeTexto.click();
+
+        caixadeTexto.sendKeys(reclamacao);
+
+        navigator.findElement(By.id(contato)).click();
+
+        if (contato.equals("radioContatoSim")) {
+
+            navigator.findElement(By.id(acompanhar)).click();
+
+        }
+
+        navigator.findElement(By.id("checkDeclaracao")).click();
+
+        navigator.findElement(By.id("CaptchaInputText")).click();
+
+    }
+
+    @org.junit.Test
+    public void viaPublicaObras() throws InterruptedException {
+
+        navigator.get(baseUrl);
+
+        //Primeira Página
+
+        if (anonimo == true) {
+            navigator.findElement(By.id("anonimo")).click();
+            navigator.findElement(By.id("botaoCadastroProximo")).click();
+        } else {
+            navigator.findElement(By.id("nome")).sendKeys(nome);
+            Thread.sleep(1000);
+            WebElement cpf = navigator.findElement(By.id("cpf"));
+            cpf.click();
+            cpf.sendKeys(numerocpf);
+            navigator.findElement(By.id("rg")).sendKeys(rg);
+            navigator.findElement(By.id("email")).sendKeys("cicero_oliverio@hotmail.com");
+            navigator.findElement(By.id("emailVerifique")).sendKeys("cicero_oliverio@hotmail.com");
+            navigator.findElement(By.id("ddd")).sendKeys("11");
+            navigator.findElement(By.id("telefone")).sendKeys("975697393");
+            navigator.findElement(By.id("botaoCadastroProximo")).click();
+        }
+
+        //Segunda Página
+
+        //navigator.findElement(By.id("municipio")).click();
+        WebElement municipio = navigator
+                .findElement(By.xpath("//*[contains(text(), 'SAO BERNARDO DO CAMPO')]"));
+        municipio.click();
+
+        WebElement logradouro = navigator.findElement(By.id("logradouro"));
+
+        logradouro.sendKeys(logradouroCasa);
+        logradouro.sendKeys(Keys.TAB);
+        if (logradouroCasa.equals("AVENIDA MIRÓ VETORAZO")) {
+            navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr[2]/td[1]")).click();
+        } else {
+            navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
+        }
+
+        navigator.findElement(By.id("numero")).sendKeys(numero);
+
+        navigator.findElement(By.id("complemento")).sendKeys("Casa");
+        WebElement cep = navigator.findElement(By.id("cep"));
+        cep.click();
+        cep.sendKeys(numerocep);
+
+        navigator.findElement(By.id("botaoEnderecoProximo")).click();
+
+        // Terceira Página
+
+        navigator.findElement(By.xpath("//*[@id=\"Pergunta_1\"]/div[2]/label")).click();
+
+        navigator.findElement(By.xpath("//*[@id=\"Pergunta_2\"]/div[7]/label")).click();
+
+        navigator.findElement(
+                By.xpath("/html/body/div[1]/form/div[3]/div/div[3]/div/div[2]/div[5]/label/input")).click();
+
+        navigator.findElement(
+                By.xpath("/html/body/div[1]/form/div[3]/div/div[3]/div/div[3]/div[3]/label/input")).click();
+
+        navigator.findElement(By.id("botaoOrigemProximo")).click();
+
+        // Última Página
+
+        WebElement caixadeTexto = navigator.findElement(By.id("textoComplemento"));
+
+        caixadeTexto.click();
+
+        caixadeTexto.sendKeys(reclamacao);
+
+        navigator.findElement(By.id(contato)).click();
+
+        if (contato.equals("radioContatoSim")) {
+
+            navigator.findElement(By.id(acompanhar)).click();
+
+        }
+
+        navigator.findElement(By.id("checkDeclaracao")).click();
+
+        navigator.findElement(By.id("CaptchaInputText")).click();
+
+    }
+
+    @org.junit.Test
+    public void viaPublicaCriancas() throws InterruptedException {
+
+        if (possuiCrianca = true) {
+            navigator.get(baseUrl);
+
+            //Primeira Página
+
+            if (anonimo == true) {
+                navigator.findElement(By.id("anonimo")).click();
+                navigator.findElement(By.id("botaoCadastroProximo")).click();
+            } else {
+                navigator.findElement(By.id("nome")).sendKeys(nome);
+                Thread.sleep(1000);
+                WebElement cpf = navigator.findElement(By.id("cpf"));
+                cpf.click();
+                cpf.sendKeys(numerocpf);
+                navigator.findElement(By.id("rg")).sendKeys(rg);
+                navigator.findElement(By.id("email")).sendKeys("cicero_oliverio@hotmail.com");
+                navigator.findElement(By.id("emailVerifique")).sendKeys("cicero_oliverio@hotmail.com");
+                navigator.findElement(By.id("ddd")).sendKeys("11");
+                navigator.findElement(By.id("telefone")).sendKeys("975697393");
+                navigator.findElement(By.id("botaoCadastroProximo")).click();
+            }
+
+            //Segunda Página
+
+            //navigator.findElement(By.id("municipio")).click();
+            WebElement municipio = navigator
+                    .findElement(By.xpath("//*[contains(text(), 'SAO BERNARDO DO CAMPO')]"));
+            municipio.click();
+
+            WebElement logradouro = navigator.findElement(By.id("logradouro"));
+
+            logradouro.sendKeys(logradouroCasa);
+            logradouro.sendKeys(Keys.TAB);
+            if (logradouroCasa.equals("AVENIDA MIRÓ VETORAZO")) {
+                navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr[2]/td[1]")).click();
+            } else {
+                navigator.findElement(By.xpath("//*[@id=\"tabelaLogradouro\"]/tbody/tr/td[2]")).click();
+            }
+            navigator.findElement(By.id("numero")).sendKeys(numero);
+
+            navigator.findElement(By.id("complemento")).sendKeys("Casa");
+            WebElement cep = navigator.findElement(By.id("cep"));
+            cep.click();
+            cep.sendKeys(numerocep);
+
+            navigator.findElement(By.id("botaoEnderecoProximo")).click();
+
+            // Terceira Página
+
+            navigator.findElement(By.xpath("//*[@id=\"Pergunta_1\"]/div[2]/label")).click();
+
+            navigator.findElement(By.xpath("//*[@id=\"Pergunta_2\"]/div[8]/label")).click();
 
 //    navigator.findElement(
 //        By.xpath("/html/body/div[1]/form/div[3]/div/div[3]/div/div[2]/div[5]/label/input")).click();
@@ -735,28 +847,28 @@ public class Test {
 //    navigator.findElement(
 //        By.xpath("/html/body/div[1]/form/div[3]/div/div[3]/div/div[3]/div[8]/label/input")).click();
 
-      navigator.findElement(By.id("botaoOrigemProximo")).click();
+            navigator.findElement(By.id("botaoOrigemProximo")).click();
 
-      // Última Página
+            // Última Página
 
-      WebElement caixadeTexto = navigator.findElement(By.id("textoComplemento"));
+            WebElement caixadeTexto = navigator.findElement(By.id("textoComplemento"));
 
-      caixadeTexto.click();
+            caixadeTexto.click();
 
-      caixadeTexto.sendKeys(reclamacao);
+            caixadeTexto.sendKeys(reclamacao);
 
-      navigator.findElement(By.id(contato)).click();
+            navigator.findElement(By.id(contato)).click();
 
-      if (contato.equals("radioContatoSim")) {
+            if (contato.equals("radioContatoSim")) {
 
-        navigator.findElement(By.id(acompanhar)).click();
+                navigator.findElement(By.id(acompanhar)).click();
 
-      }
+            }
 
-      navigator.findElement(By.id("checkDeclaracao")).click();
+            navigator.findElement(By.id("checkDeclaracao")).click();
 
-      navigator.findElement(By.id("CaptchaInputText")).click();
+            navigator.findElement(By.id("CaptchaInputText")).click();
 
+        }
     }
-  }
 }
